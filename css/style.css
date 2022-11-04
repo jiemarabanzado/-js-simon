@@ -15,7 +15,7 @@
 .original-num{
     width: calc(100%/5 - 10px);
     font-size: 3.5rem;
-    margin: 30px;
+    margin: 40px;
     color: red;
 }
 #Guess{
@@ -70,6 +70,12 @@
     opacity: 0.4;
 }
 #Gen-Num{
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+#reset{
+    display: none;
     padding: 10px;
     background-color: transparent;
     cursor: pointer;

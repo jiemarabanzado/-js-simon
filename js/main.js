@@ -37,7 +37,7 @@ function StartCounting(){
     return clock;
 }
 
-let count=9;
+let count=9   ;
 
 function FromSeven(){
     document.getElementById('CountD').innerHTML=count;
@@ -53,6 +53,8 @@ function CountDown(){
     document.getElementById('Guess').style.display='block';
 }
 function Confronta(){
+    document.getElementById('try').style.display='none';
+    document.getElementById('reset').style.display='block';
     Match=0;
     let IsIn=true;
     let guess=document.querySelectorAll('.what');
@@ -77,3 +79,6 @@ function Confronta(){
 //Funzioni Generiche e comportamenti di base
 document.getElementById('Gen-Num').addEventListener('click',Genera);
 document.getElementById('try').addEventListener('click',Confronta)
+document.getElementById('reset').addEventListener('click',function(){
+    window.location.reload();
+})
