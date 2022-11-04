@@ -10,3 +10,6 @@
 .original-num{
     width: calc(100%/5 - 10px);
 }
+#Guess{
+    display: none;
+}

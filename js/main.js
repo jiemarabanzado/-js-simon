@@ -1,5 +1,6 @@
 //variabili globali
 let says=[];
+let Match=0;
 //functions
 function Genera(){
     document.getElementById('Gen-Num').style.display='none';
@@ -29,9 +30,29 @@ function StartCountDown(){
 }
 function CountDown(){
     document.getElementById('Original').style.display='none';
+    document.getElementById('Guess').style.display='block';
 }
-
+function Confronta(){
+    let IsIn=true;
+    let guess=document.querySelectorAll('.what');
+    for (let index = 0; index < guess.length; index++) {
+        let a=parseInt(guess[index].value);
+        if(says.includes(a)){
+            IsIn=true;
+            Match+=1;
+        }else{
+            IsIn=false;
+        }   
+    }
+    console.log(guess);
+    console.log(Match);
+    if(Match==5){
+        alert(`hai vinto ${Match} su 5`);
+    }else{
+        alert(`hai perso ${Match} su 5`);
+    }
+}
 
 //Funzioni Generiche e comportamenti di base
 document.getElementById('Gen-Num').addEventListener('click',Genera);
-
+document.getElementById('try').addEventListener('click',Confronta)
