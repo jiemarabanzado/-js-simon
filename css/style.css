@@ -13,3 +13,29 @@
 #Guess{
     display: none;
 }
+.what{
+    border-radius: 5px;
+    font-size: 75px;
+    height: 120px;
+    width: 100px;
+    border: 1px solid #eee;
+    outline-width: thin;;
+    outline-color: #ddd;
+    margin: 1%;
+    text-align: center;
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: 60px;
+    height: 80px;
+    max-width: 120px;
+
+}
+.what::-webkit-outer-spin-button,
+.what::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
+}
+.what:valid {
+    border-color: #1DBF73;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
