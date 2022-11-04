@@ -33,6 +33,7 @@ function CountDown(){
     document.getElementById('Guess').style.display='block';
 }
 function Confronta(){
+    Match=0;
     let IsIn=true;
     let guess=document.querySelectorAll('.what');
     for (let index = 0; index < guess.length; index++) {
