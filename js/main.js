@@ -29,7 +29,7 @@ function Genera(){
 
 }
 function StartCountDown(){
-    setTimeout(CountDown, 7000);
+    setTimeout(CountDown, 10000);
 }
 
 function StartCounting(){
@@ -37,7 +37,7 @@ function StartCounting(){
     return clock;
 }
 
-let count=6;
+let count=9;
 
 function FromSeven(){
     document.getElementById('CountD').innerHTML=count;

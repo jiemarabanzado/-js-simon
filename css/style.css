@@ -14,7 +14,7 @@
 }
 .original-num{
     width: calc(100%/5 - 10px);
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 30px;
     color: red;
 }
@@ -68,4 +68,9 @@
     text-align: center;
     font-size: 2.5rem;
     opacity: 0.4;
+}
+#Gen-Num{
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
 }
