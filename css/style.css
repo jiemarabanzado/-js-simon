@@ -3,3 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+#Original{
+    display: flex;
+    max-width: 300px ;
+}
+.original-num{
+    width: calc(100%/5 - 10px);
+}
