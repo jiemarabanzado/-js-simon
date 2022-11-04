@@ -1,6 +1,7 @@
 //variabili globali
 let says=[];
 let Match=0;
+let clock;
 //functions
 function Genera(){
     document.getElementById('Gen-Num').style.display='none';
@@ -24,12 +25,31 @@ function Genera(){
     }
     console.log(says)
     StartCountDown();
+    clock=StartCounting()
+
 }
 function StartCountDown(){
-    setTimeout(CountDown, 5000);
+    setTimeout(CountDown, 7000);
+}
+
+function StartCounting(){
+    let clock= setInterval (FromSeven, 1000);
+    return clock;
+}
+
+let count=6;
+
+function FromSeven(){
+    document.getElementById('CountD').innerHTML=count;
+    count-=1;
+    console.log(count)
+    if(count==0){
+        count=6;
+        clearTimeout(clock);
+    }  
 }
 function CountDown(){
-    document.getElementById('Original').style.display='none';
+    document.getElementById('org-row').style.display='none';
     document.getElementById('Guess').style.display='block';
 }
 function Confronta(){

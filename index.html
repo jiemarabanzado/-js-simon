@@ -4,24 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <main>
         <section>
-            <div id="Original">
-                <button id="Gen-Num">Genera</button>
-                <!--numeri-->
+            <div id="org-row">
+                <div class="question">
+                    Ricordati bene i numeri!!
+                </div>
+                <div id="Original">
+                    <div id="Gen-Btn">
+                        <button id="Gen-Num">Genera</button>    
+                    </div>
+                    
+                    <!--numeri-->
+                </div>
+                <div id="CountD">
+
+                </div>
             </div>
             <div id="Guess">
-                <input type="number" class="what" min="0" max="100"required>
-                <input type="number" class="what" min="0" max="100"required>
-                <input type="number" class="what" min="0" max="100"required>
-                <input type="number" class="what" min="0" max="100"required>
-                <input type="number" class="what" min="0" max="100"required>
-                <button id="try">invia</button>
-                
+                <div class="question">
+                    Ti ricordi i numeri?!
+                </div>
+                <div id="guess-row">
+                    <div id="in">
+                        <input type="number" class="what" min="0" max="100"required>
+                        <input type="number" class="what" min="0" max="100"required>
+                        <input type="number" class="what" min="0" max="100"required>
+                        <input type="number" class="what" min="0" max="100"required>
+                        <input type="number" class="what" min="0" max="100"required>
+                    </div>
+                    <div>
+                        <button id="try">invia</button>
+                    </div>
+                    
+                </div>
             </div>
         </section>
     </main>
